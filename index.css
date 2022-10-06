@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+nav {
+    background-color: black;
+    height: 50px;
+}
+ul {
+    display: flex;
+}
+li {
+    list-style-type: none;
+    color: white;
+    padding: 10px;
+}
+.footerContainer {
+    background-color: rgb(51, 41, 3);
+    color: white;
+    width: 100%;
+    float: bottom;
+}
+.contentContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3px;
+}
