@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 5px;
+}
+
+.formContainer {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.formContainer > form {
+  border: 1px solid black;
+  margin: 10px;
+}
+.textAreaContainer > textarea {
+  vertical-align: top;
+  margin-left: 35px;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+}
+input {
+  margin-left: 50px;
+}
+select {
+  margin-left: 30px;
+}
