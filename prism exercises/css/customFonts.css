@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/Oswald-Regular.ttf");
+}
+
+.parent {
+  background-color: #fbecec;
+  padding: 50px;
+  color: #440047;
+}
+/* If the first font family is not available or broken here it will take sans-seriff as family */
+h2 {
+  color: #e11d74;
+  font-family: "Oswald", sans-serif;
+}
+p {
+  font-family: "Oswald", sans-serif;
+}
