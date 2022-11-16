@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <style>
+      .container {
+        margin: 10em auto;
+        padding: 10px;
+        width: 50%;
+        text-align: center;
+        border: 1px solid;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form id="form-id">
+        <label for="n1">N1</label><br />
+        <input type="text" name="n1" id="n1" /><br /><br />
+        <label for="n2">N2</label><br />
+        <input type="text" name="n2" id="n2" /><br /><br />
+        <label for="result">Result</label><br />
+        <input type="text" name="result" id="result" readonly /><br /><br />
+        <div>
+          <button id="addBtn" onclick="addNums()">Add</button>
+          <button id="subBtn" onclick="subNums()">Subtract</button>
+          <button id="mulBtn" onclick="mulNums()">Multiply</button>
+          <button id="divBtn" onclick="divNums()">Divide</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="../js/domActivity1.js"></script>
+</html>
