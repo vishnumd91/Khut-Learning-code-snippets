@@ -41,11 +41,11 @@ const productList = [
   },
 ];
 
-const productElement = document.querySelector(".product-container");
 const cartElement = document.querySelector(".cart-container");
 let cart = [];
 
 productList.forEach((product) => {
+  const productElement = document.querySelector(".product-container");
   const { productId, productName, price } = product;
   //   Create Card element
   const cardBody = `
@@ -66,12 +66,16 @@ const addToCart = (productId) => {
   const addedProduct = productList.find(
     (product) => product.productId === productId
   );
-  cart.push(addedProduct);
-  console.log(cart);
+  const { price } = addedProduct;
+  cart.push(price);
+  displayCartValues(cart);
 };
 
-const cartBody = `
-<h4>Cart Size: ${cart.length}</h4>
-<h4>Total Price: 1234</h4>
+const displayCartValues = (cart) => {
+  const cartSum = cart.reduce((acc, curr) => acc + curr);
+  const cartBody = `
+  <h4>Cart Size: ${cart.length}</h4>
+  <h4>Total Price: ${cartSum}</h4>
 `;
-cartElement.innerHTML += cartBody;
+  cartElement.innerHTML += cartBody;
+};
