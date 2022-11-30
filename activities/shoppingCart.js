@@ -77,5 +77,5 @@ const displayCartValues = (cart) => {
   <h4>Cart Size: ${cart.length}</h4>
   <h4>Total Price: ${cartSum}</h4>
 `;
-  cartElement.innerHTML += cartBody;
+  cartElement.innerHTML = cartBody;
 };
